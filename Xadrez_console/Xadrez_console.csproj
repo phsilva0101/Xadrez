@@ -34,10 +34,13 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tabuleiro\Posicao.cs" />
+    <Compile Include="tabuleiro\Posicao.cs" />
+    <Compile Include="tabuleiro\Cor.cs" />
+    <Compile Include="tabuleiro\Peca.cs" />
+    <Compile Include="tabuleiro\Tabuleiro.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Tabuleiro\" />
+    <Folder Include="tabuleiro\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
