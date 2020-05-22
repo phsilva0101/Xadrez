@@ -15,6 +15,9 @@ namespace Xadrez_console.tabuleiro
         }
 
 
-      
+      public Peca peca (int linhas , int colunas)
+        {
+            return pecas[linhas, colunas];
+        }
     }
 }

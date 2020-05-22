@@ -38,6 +38,7 @@
     <Compile Include="tabuleiro\Cor.cs" />
     <Compile Include="tabuleiro\Peca.cs" />
     <Compile Include="tabuleiro\Tabuleiro.cs" />
+    <Compile Include="Tela.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tabuleiro\" />
