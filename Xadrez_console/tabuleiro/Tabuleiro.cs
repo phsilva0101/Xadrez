@@ -1,5 +1,7 @@
 ﻿using System;
-namespace Xadrez_console.tabuleiro
+
+using tabuleiro;
+namespace tabuleiro
 {
      class Tabuleiro
     {
@@ -18,6 +20,11 @@ namespace Xadrez_console.tabuleiro
       public Peca peca (int linhas , int colunas)
         {
             return pecas[linhas, colunas];
+        }
+        public void colocarPeca(Peca p , Posicao pos)
+        {
+            pecas[pos.Linha, pos.Coluna] = p;
+            p.posicao = pos;
         }
     }
 }

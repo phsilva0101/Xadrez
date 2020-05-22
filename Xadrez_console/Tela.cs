@@ -1,10 +1,10 @@
 ﻿using System;
-using Xadrez_console.tabuleiro;
+using tabuleiro;
 namespace Xadrez_console
 {
     class Tela
     {
-        public static void imprimirTela(Tabuleiro tab)
+        public static void imprimirTabuleiro(Tabuleiro tab)
         {
             for (int i = 0; i < tab.linhas; i++)
             {
