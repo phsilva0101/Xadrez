@@ -42,6 +42,7 @@
     <Compile Include="xadrez\Rei.cs" />
     <Compile Include="xadrez\Torre.cs" />
     <Compile Include="tabuleiro\TabuleiroException.cs" />
+    <Compile Include="xadrez\PosicaoXadrez.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tabuleiro\" />
