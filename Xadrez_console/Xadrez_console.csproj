@@ -43,6 +43,7 @@
     <Compile Include="xadrez\Torre.cs" />
     <Compile Include="tabuleiro\TabuleiroException.cs" />
     <Compile Include="xadrez\PosicaoXadrez.cs" />
+    <Compile Include="xadrez\PartidaDeXadrez.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tabuleiro\" />

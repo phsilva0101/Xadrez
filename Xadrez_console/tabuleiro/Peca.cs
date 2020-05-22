@@ -16,8 +16,10 @@ namespace tabuleiro
             this.cor = cor;
             this.tab = tab;
             this.qtdemovimentos = 0;
-
-
+       }
+        public void incrementarQtdeMovimentos()
+        {
+            qtdemovimentos++;
         }
 
     }
