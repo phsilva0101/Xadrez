@@ -51,7 +51,7 @@ namespace tabuleiro
             }
             Peca aux = peca(pos);
             aux.posicao = null;
-            pecas[pos.Coluna, pos.Linha] = null;
+            pecas[pos.Linha, pos.Coluna] = null;
             return aux;
         }
 
