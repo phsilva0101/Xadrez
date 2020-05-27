@@ -161,7 +161,7 @@ namespace xadrez
             Peca R = rei(cor);
             foreach(Peca x in pecasEmJogo(adversaria(cor)))
             {
-                bool[,] mat = x.movimentoPossivel();
+                bool[,] mat = x.movimentosPossiveis();
                 if(mat[R.posicao.Linha , R.posicao.Coluna])
                 {
                     return true;
@@ -176,7 +176,7 @@ namespace xadrez
             }
             foreach(Peca x in pecasEmJogo(cor)) 
             {
-                bool[,] mat = x.movimentoPossivel();
+                bool[,] mat = x.movimentosPossiveis();
                 for (int i = 0; i < tab.linhas; i++)
                 {
                     for(int j = 0; j < tab.coluna; j++)
@@ -207,13 +207,41 @@ namespace xadrez
         private void colocarPecas() {
 
            
-            colocarNovasPecas('h', 7, new Torre(tab, Cor.Branca));
-            colocarNovasPecas('c', 1, new Torre(tab, Cor.Branca));
-            colocarNovasPecas('d', 1, new Rei(tab, Cor.Branca));
+            colocarNovasPecas('a', 1, new Torre(tab, Cor.Branca));
+            colocarNovasPecas('b', 1, new Cavalo(tab, Cor.Branca));
+            colocarNovasPecas('c', 1, new Bispo (tab, Cor.Branca));
+            colocarNovasPecas('d', 1, new Dama(tab, Cor.Branca));
+            colocarNovasPecas('e', 1, new Rei(tab, Cor.Branca));
+            colocarNovasPecas('f', 1, new Bispo(tab, Cor.Branca));
+            colocarNovasPecas('g', 1, new Cavalo(tab, Cor.Branca));
+            colocarNovasPecas('h', 1, new Torre(tab, Cor.Branca));
+            colocarNovasPecas('a', 2, new Peao(tab, Cor.Branca));
+            colocarNovasPecas('b', 2, new Peao(tab, Cor.Branca));
+            colocarNovasPecas('c', 2, new Peao(tab, Cor.Branca));
+            colocarNovasPecas('d', 2, new Peao(tab, Cor.Branca));
+            colocarNovasPecas('e', 2, new Peao(tab, Cor.Branca));
+            colocarNovasPecas('f', 2, new Peao(tab, Cor.Branca));
+            colocarNovasPecas('g', 2, new Peao(tab, Cor.Branca));
+            colocarNovasPecas('h', 2, new Peao(tab, Cor.Branca));
 
-           
-            colocarNovasPecas('b',8 , new Torre(tab, Cor.Preta));
-            colocarNovasPecas('a', 8, new Rei(tab, Cor.Preta));
+            colocarNovasPecas('a', 8, new Torre(tab, Cor.Preta));
+            colocarNovasPecas('b', 8, new Cavalo(tab, Cor.Preta));
+            colocarNovasPecas('c', 8, new Bispo(tab, Cor.Preta));
+            colocarNovasPecas('d', 8, new Dama(tab, Cor.Preta));
+            colocarNovasPecas('e', 8, new Rei(tab, Cor.Preta));
+            colocarNovasPecas('f', 8, new Bispo(tab, Cor.Preta));
+            colocarNovasPecas('g', 8, new Cavalo(tab, Cor.Preta));
+            colocarNovasPecas('h',8, new Torre(tab, Cor.Preta));
+            colocarNovasPecas('a', 7, new Peao(tab, Cor.Preta));
+            colocarNovasPecas('b', 7, new Peao(tab, Cor.Preta));
+            colocarNovasPecas('c', 7 , new Peao(tab, Cor.Preta));
+            colocarNovasPecas('d', 7, new Peao(tab, Cor.Preta));
+            colocarNovasPecas('e', 7, new Peao(tab, Cor.Preta));
+            colocarNovasPecas('f', 7, new Peao(tab, Cor.Preta));
+            colocarNovasPecas('g', 7, new Peao(tab, Cor.Preta));
+            colocarNovasPecas('h', 7, new Peao(tab, Cor.Preta));
+
+
         }
 
     }

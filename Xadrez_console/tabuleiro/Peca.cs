@@ -28,7 +28,7 @@ namespace tabuleiro
         }
         public bool existeMovimentosPossiveis()
         {
-            bool[,] mat = movimentoPossivel();
+            bool[,] mat = movimentosPossiveis();
             for(int i = 0; i < tab.linhas; i++)
             {
                 for(int j = 0; j< tab.coluna; j++)
@@ -43,9 +43,9 @@ namespace tabuleiro
         }
         public bool movimentoPossivel(Posicao pos)
         {
-            return movimentoPossivel()[pos.Linha, pos.Coluna];
+            return movimentosPossiveis()[pos.Linha, pos.Coluna];
         }
 
-        public abstract bool [,] movimentoPossivel();
+        public abstract bool [,] movimentosPossiveis();
     }
 }
