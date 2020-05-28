@@ -1,5 +1,4 @@
 /home/ph_silva/Documentos/Xadrez-console/Xadrez_console/Xadrez_console/bin/Debug/Xadrez_console.exe
 /home/ph_silva/Documentos/Xadrez-console/Xadrez_console/Xadrez_console/bin/Debug/Xadrez_console.pdb
-/home/ph_silva/Documentos/Xadrez-console/Xadrez_console/Xadrez_console/obj/x86/Debug/Xadrez_console.csprojAssemblyReference.cache
 /home/ph_silva/Documentos/Xadrez-console/Xadrez_console/Xadrez_console/obj/x86/Debug/Xadrez_console.exe
 /home/ph_silva/Documentos/Xadrez-console/Xadrez_console/Xadrez_console/obj/x86/Debug/Xadrez_console.pdb

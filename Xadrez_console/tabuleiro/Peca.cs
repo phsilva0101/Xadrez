@@ -1,51 +1,42 @@
-﻿using System;
+﻿namespace tabuleiro {
+    abstract class Peca {
 
-using tabuleiro;
-namespace tabuleiro
-{
-    abstract class Peca
-    {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
-        public int qtdemovimentos { get; protected set; }
+        public int qteMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
-
-        public Peca( Cor cor, Tabuleiro tab)
-        {
+         
+        public Peca(Tabuleiro tab, Cor cor) {
             this.posicao = null;
-            this.cor = cor;
             this.tab = tab;
-            this.qtdemovimentos = 0;
-       }
-        public void decrementarQtdeMovimentos()
-        {
-            qtdemovimentos--;
+            this.cor = cor;
+            this.qteMovimentos = 0;
         }
 
-        public void incrementarQtdeMovimentos()
-        {
-            qtdemovimentos++;
+        public void incrementarQteMovimentos() {
+            qteMovimentos++;
         }
-        public bool existeMovimentosPossiveis()
-        {
+
+        public void decrementarQteMovimentos() {
+            qteMovimentos--;
+        }
+
+        public bool existeMovimentosPossiveis() {
             bool[,] mat = movimentosPossiveis();
-            for(int i = 0; i < tab.linhas; i++)
-            {
-                for(int j = 0; j< tab.coluna; j++)
-                {
-                    if (mat[i, j])
-                    {
+            for (int i=0; i<tab.linhas; i++) {
+                for (int j=0; j<tab.colunas; j++) {
+                    if (mat[i, j]) {
                         return true;
                     }
                 }
             }
             return false;
         }
-        public bool movimentoPossivel(Posicao pos)
-        {
-            return movimentosPossiveis()[pos.Linha, pos.Coluna];
+
+        public bool movimentoPossivel(Posicao pos) {
+            return movimentosPossiveis()[pos.linha, pos.coluna];
         }
 
-        public abstract bool [,] movimentosPossiveis();
+        public abstract bool[,] movimentosPossiveis();
     }
 }
