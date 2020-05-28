@@ -27,49 +27,49 @@ namespace xadrez
 
 
             pos.definirValores(posicao.Linha - 1, posicao.Coluna - 2);
-            if (tab.peca(pos) != null || tab.peca(pos).cor != cor)
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
             pos.definirValores(posicao.Linha - 2, posicao.Coluna - 1);
-            if (tab.peca(pos) != null || tab.peca(pos).cor != cor)
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
             pos.definirValores(posicao.Linha - 2, posicao.Coluna + 1);
-            if (tab.peca(pos) != null || tab.peca(pos).cor != cor)
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
             pos.definirValores(posicao.Linha - 1, posicao.Coluna + 2);
-            if (tab.peca(pos) != null || tab.peca(pos).cor != cor)
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
             pos.definirValores(posicao.Linha + 1, posicao.Coluna + 2);
-            if (tab.peca(pos) != null || tab.peca(pos).cor != cor)
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
             pos.definirValores(posicao.Linha + 2, posicao.Coluna + 1);
-            if (tab.peca(pos) != null || tab.peca(pos).cor != cor)
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
             pos.definirValores(posicao.Linha + 2, posicao.Coluna - 1);
-            if (tab.peca(pos) != null || tab.peca(pos).cor != cor)
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
 
             pos.definirValores(posicao.Linha + 1, posicao.Coluna - 2);
-            if (tab.peca(pos) != null || tab.peca(pos).cor != cor)
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
             }
